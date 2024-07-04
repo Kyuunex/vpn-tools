@@ -1,5 +1,7 @@
 # VPN Tools
+A collection of VPN related scripts
 
+### Steps
 - `mkdir userdata`
 - `mkdir userdata/blacklists`
 - download all openvpn configs, there is a button for it in web portal. it gives you a zip.
