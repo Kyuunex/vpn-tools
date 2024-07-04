@@ -5,15 +5,13 @@ import os
 from OVPN import OVPN
 
 CONFIG_DIR = "userdata/Provider_server_configs"
-SAVE_FILE_JSON = "userdata/not_hosting.json"
+SAFE_FILE = "userdata/not_banned_ips.txt"
+
+SAVE_FILE_JSON = "userdata/not_banned_ips.json"
 
 all_ips = []
 all_ips_dict = {}
-
-SAFE_FILE = "userdata/not_hosting.txt"
-
 ip_whitelist = []
-
 safe_ips = []
 
 with open(SAFE_FILE, "r") as read_file:

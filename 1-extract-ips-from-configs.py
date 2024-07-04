@@ -6,7 +6,6 @@ from OVPN import OVPN
 
 CONFIG_DIR = "userdata/Provider_server_configs"
 SAVE_FILE = "userdata/provider_ips.txt"
-# SAVE_FILE_JSON = "userdata/provider_ips.json"
 
 all_ips = []
 all_ips_dict = {}
@@ -29,12 +28,6 @@ def export():
     output_file = open(SAVE_FILE, "w")
     output_file.write(output_buffer)
     output_file.close()
-
-
-# def export_json():
-#     output_file = open(SAVE_FILE_JSON, "w")
-#     output_file.write(json.dumps(all_ips_dict, indent=2))
-#     output_file.close()
 
 
 if __name__ == '__main__':
